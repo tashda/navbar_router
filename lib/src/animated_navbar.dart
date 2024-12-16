@@ -1062,7 +1062,7 @@ class FloatingNavbarState extends State<FloatingNavbar> {
                     child: Material(
                   color: Colors.transparent,
                   child: InkWell(
-                      enableFeedback: widget.decoration.enableFeedback,
+                      enableFeedback: widget.decoration.enableFeedback ?? true,
                       borderRadius:
                           widget.borderRadius ?? BorderRadius.circular(16.0),
                       onTap: () {
